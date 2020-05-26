@@ -3,7 +3,7 @@
     The array information is then seperated to what is necessary. The data then displays
     the last twelve items in the array. This includes the image, name and price. Finally,
     It will then display this information on the web browser.
-    I did learn that I could have used filter later on in the project. Would have
+    I did learn that I could have used filter() later on in the project. Would have
     used that if I had known about it earlier.
 */
 
@@ -65,12 +65,12 @@ fetchPromise.then(response => {
     console.log("print image src's: " + imageSrc)
 
     //Display the items on the screen.
-    main.innerHTML = prices(price,vendor,imageSrc);
+    main.innerHTML = pageInfo(price,vendor,imageSrc);
   
     });
     
-
-function prices(price,vendor,imageSrc) {
+/* Grabs the array information and displays it on the browser*/
+function pageInfo(price,vendor,imageSrc) {
 
     //map vendor information
     const vendorInfo = vendor.map(value => 

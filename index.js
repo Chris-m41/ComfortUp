@@ -3,6 +3,8 @@
     The array information is then seperated to what is necessary. The data then displays
     the last twelve items in the array. This includes the image, name and price. Finally,
     It will then display this information on the web browser.
+    I did learn that I could have used filter later on in the project. Would have
+    used that if I had known about it earlier.
 */
 
 let url = 'https://comfortup.com/products.json';
